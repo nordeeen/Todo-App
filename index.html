@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      name="”viewport”"
+      content="”width"
+      ="device-width,"
+      initial-scale="1.0,"
+      maximum-scale="1.0,"
+      user-scalable="no”"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">To-do App</h1>
+        <h2 class="header__subtitle">What do you need to do?</h2>
+      </div>
+    </header>
+
+    <div class="actions">
+      <div class="actions__container">
+        <input
+          id="search-text"
+          type="text"
+          class="input"
+          placeholder="filters todos"
+        />
+        <label>
+          <input type="checkbox" id="hideCompleted" /> Hide Completed
+        </label>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="todos"></div>
+      <form id="new-todos">
+        <input
+          type="text"
+          class="input"
+          placeholder="Something to do"
+          name="text"
+        />
+        <button class="button">Add Todo</button>
+      </form>
+      <footer class="legal">
+        &copy; 2021 by nordeeen. <br />
+        All rights reserved
+      </footer>
+    </div>
+  </body>
+  <script src="scripts/uuidv4.js"></script>
+  <script src="scripts/todos-functions.js"></script>
+  <script src="scripts/script.js"></script>
+</html>
